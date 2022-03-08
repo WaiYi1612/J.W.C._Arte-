@@ -1,0 +1,71 @@
+﻿Repeater {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 3px;
+    
+}  
+
+.container .card{
+    position: relative;
+    max-width: 350px;
+    height: 350px;
+    background: #fff;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    float:left;
+}
+
+.container .card:hover
+{
+    height:560px;
+}
+
+.container .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height:280px;
+    top: -10px;
+    left: 7px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img
+{
+    width: 260px;
+    border-radius: 4px;
+    height:270px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -120px;
+    padding: 10px 15px;
+    text-align:center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -5px;
+    transition-delay: 0.3s;
+}

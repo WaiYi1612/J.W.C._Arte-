@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WAD.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title>JWC</title>
+
+    <!--Text style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <!-- Master CSS Link -->
+    <link href="../Assets/StyleSheets/Master.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Link -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Head Content Placeholder -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body style="background-color: #E9E8E2;">
+    <form id="form1" runat="server">
+     
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center" style="background-color: #e3e0cf;">
+
+            <!--Left Nav Logo-->
+            <a href="/HomePage/HomePage.aspx" class="navbar-brand d-flex w-50 mr-auto">
+                <img src="/ImageAsset_CC/Logo4.png" class="rounded float-left" alt="JWC Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+
+                <!--Center Nav Bar-->
+                <asp:ContentPlaceHolder ID="CenterNavBar" runat="server" />
+
+                <!--Right Nav Logo-->
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <asp:ContentPlaceHolder ID="RightNavBar" runat="server" />
+                    <li class="nav-item" style="position: absolute; right: 80px; top: 30px;">
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" Style="color: #696969;" LoginText="<i class='fa fa-sign-in Sign in'></i> Sign In" LogoutPageUrl="~/HomePage/HomePage.aspx" LogoutText="<i class='fa fa-sign-in Sign in'></i> Sign Out" LogoutAction="Redirect" OnLoggingOut="LoginStatus1_LoggingOut" />
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!--From tag for control the asp.net content page dont remove it -->
+        <!--Content Page Add id-->
+        <div id="home">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+        <div id="test2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+    </form>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo" style="background-color: #e3e0cf;">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p style="color: black;"><i class="fa fa-phone" aria-hidden="true"></i>+0123456789</p>
+                        </li>
+                        <li>
+                            <p style="color: black;"><i class="fa fa-envelope" aria-hidden="true"></i>jwcArte@gmail.com</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Follow Us</h5>
+                    <div class="col-md-5 col-lg-7 text-center text-md-left">
+                        <a href="#!"><i class="fa fa-facebook-official" aria-hidden="true" style="color: black;"></i></a>
+                        <a href="#!"><i class="fa fa-instagram" aria-hidden="true" style="color: black;"></i></a>
+                        <a href="#!"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: black;"></i></a>
+                        <a href="#!"><i class="fa fa-twitter-square" aria-hidden="true" style="color: black;"></i></a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Us</h5>
+                    <p>Join us. We provide platform for artworks sales. Collaborate with famous gallery studios.       -J.W.C arte(2021)</p>
+
+                </div>
+           <%--     <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <!-- JWC Logo Image -->
+                            <a href="/HomePage/HomePage.aspx">
+                                <img src="/ImageAsset_CC/Logo4.png" alt="JWC Logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->--%>
+                </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2021 Copyright: JWC Arte
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+</body>
+</html>

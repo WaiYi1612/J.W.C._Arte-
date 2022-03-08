@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GeneralNavBar.ascx.cs" Inherits="WAD.Controls.MasterPage.Right.GeneralNavBar" %>

@@ -1,0 +1,13 @@
+Customer Credential
+username: yi
+password: waiyi
+
+Artist Credential
+username: yiA
+password: waiyiA
+
+Admin Credential
+username: admin
+password: admin
+
+*Admin can be logged in using both Artist SignIn & Customer SignIn
