@@ -17,6 +17,6 @@ password: admin
 
 
 ## Page Preview
-[!image](https://github.com/WaiYi1612/J.W.C._Arte-/blob/main/MainPage.png)
-[!image](https://github.com/WaiYi1612/J.W.C._Arte-/blob/main/Edit.png)
-[!image](https://github.com/WaiYi1612/J.W.C._Arte-/blob/main/Cart.png)
+![image](https://github.com/WaiYi1612/J.W.C._Arte-/blob/main/MainPage.png)
+![image](https://github.com/WaiYi1612/J.W.C._Arte-/blob/main/Edit.png)
+![image](https://github.com/WaiYi1612/J.W.C._Arte-/blob/main/Cart.png)
